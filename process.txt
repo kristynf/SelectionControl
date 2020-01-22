@@ -3,6 +3,38 @@ Prompt user for "customer name"
 Prompt user for "purchase amount"
 Prompt user for "tax code"
 Assign "tax code" to a percent amount (could be a pre-defined database, if so this would be an import statement at the beginning)
-If "tax code" is not 0% then multiply by corresponding percent and save that value to "tax"
-Add "tax" to purchase amount to give and save as "Total amount due"
+If "tax code" is not 0% then multiply by corresponding percent and save that value to "total tax"
+Add "total tax" to purchase amount to give and save as "Total amount due"
 print "customer name" your total amount due is: $"Total amount due"
+
+Input: Customer Name
+       Purchase Amount
+       Tax Code
+
+Output: Total Amount Due
+ 
+Processing Steps:
+	1: Get customer name
+	2. Get purchase amount
+	3. Get Tax Code
+	4. Assign a percent amount to each tax code
+	5. Determine the amount of tax to be added by multiplying the percent. 
+	6. Add the tax to the total.
+	7. Present the total to the customer.
+
+Variables:
+	1. customer name
+	2. purchase amount
+	3. tax code
+	4. total amount due
+	5. total tax
+
+Test Data:
+
+This could be tested with an Income Tax Scenerio as well.
+Set up different income brackets. Ask name of constituents. Ask income. Assign a tax bracket based on income from a simple database.
+Perform math. Print out the tax due.
+
+Additionally, this could be done for an internet transaction determined by state. Customer enters their state which determines how much tax they are charged. 
+The tax percent is calculated by multiplying it to the purchase price and then adding the result to the original purchase price. Then the total is displayed to 
+the customer. 

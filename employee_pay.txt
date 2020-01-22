@@ -8,6 +8,29 @@ check hourly rate
 	print "Pay rate greater than the maximum of $25.00/hr, payroll not processed"
 check hours worked
 	if > 35 but < 60 then
-	(multiply payrate * 1.5 * hoursworked)
-	else (payrate * hoursworked)
+	(multiply payrate * 1.5 * hoursworked) = pay
+	else (payrate * hoursworked) = pay
+
+Input: Payroll  
+
+Output: Failed File and Paychecks
+ 
+Processing Steps:
+	1: Get payroll data
+	2. Determine rejected data
+	3. Determine OT and calulate paycheck
+	4. Determine regular payroll and calculate
+
+Variables:
+	1. total hours worked
+	2. hourly rate
+	3. employee id
+	4. pay
 		
+Test Case 
+
+Another possible case this might work with alerting managers when someone is always getting overtime when the company policy is no overtime. I know that was the
+policy at my last company. This could also be used in the reverse, if they are not working all their hours. 
+
+In the first case, this would just take looking for any employee over 35 hours, while processing the payroll, flagging them for a report to the manager. 
+In the second case, this would take looking for any employee working under 35 hours (assuming this is their FTE)
