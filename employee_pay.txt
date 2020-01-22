@@ -1,0 +1,13 @@
+"#Intructions to calculation employee pay"
+import payroll.db
+check total hours worked
+	if > 60 then
+	print "Hours outside the maximum allowed of 60 hours per week, payroll not processed"
+check hourly rate
+	if > 25.00 then
+	print "Pay rate greater than the maximum of $25.00/hr, payroll not processed"
+check hours worked
+	if > 35 but < 60 then
+	(multiply payrate * 1.5 * hoursworked)
+	else (payrate * hoursworked)
+		

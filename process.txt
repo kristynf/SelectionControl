@@ -1,0 +1,8 @@
+"#Intructions to process a customer record"
+Prompt user for "customer name"
+Prompt user for "purchase amount"
+Prompt user for "tax code"
+Assign "tax code" to a percent amount (could be a pre-defined database, if so this would be an import statement at the beginning)
+If "tax code" is not 0% then multiply by corresponding percent and save that value to "tax"
+Add "tax" to purchase amount to give and save as "Total amount due"
+print "customer name" your total amount due is: $"Total amount due"
